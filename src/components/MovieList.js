@@ -35,7 +35,7 @@ export default function MovieList({ title, fetchUrl }) {
         if( trailerPath) {
             setTrailerPath("")
         }else {
-            let trailerPath = await axios.get( `movie/${movie.id}/videos?api_key=f9a6f7630ab9132d6817fef439aebb3b`)
+            let trailerPath = await axios.get( `movie/${movie.id}/videos?api_key=`)
             setTrailerPath(trailerPath.data.results[0]?.key);
         }
     };
