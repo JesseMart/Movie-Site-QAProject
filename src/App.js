@@ -17,6 +17,7 @@ function App() {
       <MovieList title = "TV Based Films" fetchUrl={requests.getTVMovies} />
       <MovieList title = "Horror Films" fetchUrl={requests.getHorror} />
       <MovieList title = "Action Films" fetchUrl={requests.getAction} />
+      
     </div>
   );
 }
