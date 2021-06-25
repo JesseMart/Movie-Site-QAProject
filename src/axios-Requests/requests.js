@@ -7,6 +7,7 @@ const requests = {
     getPopularMovies : `/movie/popular?api_key=${API__KEY}&language=en-US`,
     getHorror : `/discover/movie?api_key=${API__KEY}&with_genres=27`,
     getAction :`/discover/movie?api_key=${API__KEY}&with_genres=28`,
+    getTPMovies :`/movie/top_rated?api_key=${API__KEY}&language=en-US`,
 }
 
 export default requests

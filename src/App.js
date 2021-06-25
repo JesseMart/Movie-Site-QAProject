@@ -2,10 +2,14 @@ import React from 'react'
 import MovieList from './components/MovieList'
 import './App.css';
 import requests from './axios-Requests/requests';
+import NavBar from './components/NavBar';
+import MovieSample from './components/MovieSample'
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
+      <MovieSample />
       <MovieList title = "Trending" fetchUrl={requests.getTrending} />
       <MovieList title = "Popular TV Shows" fetchUrl={requests.getTVShows} />
       <MovieList title = "Now Playing" fetchUrl={requests.getNPMovies} />
