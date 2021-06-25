@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react'
+import MovieList from './components/MovieList'
 import './App.css';
+import requests from './axios-Requests/requests';
+import NavBar from './components/NavBar';
+import MovieSample from './components/MovieSample'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <MovieSample />
+      <MovieList title = "Trending Films" fetchUrl={requests.getTrending} />
+      <MovieList title = "Now Playing" fetchUrl={requests.getNPMovies} />
+      
+      <MovieList title = "Popular Films Today" fetchUrl={requests.getPopularMovies} />
+      <MovieList title = "TV Based Films" fetchUrl={requests.getTVMovies} />
+      <MovieList title = "Horror Films" fetchUrl={requests.getHorror} />
+      <MovieList title = "Action Films" fetchUrl={requests.getAction} />
     </div>
   );
 }
