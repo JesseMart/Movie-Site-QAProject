@@ -10,10 +10,11 @@ function App() {
     <div className="App">
       <NavBar />
       <MovieSample />
-      <MovieList title = "Trending" fetchUrl={requests.getTrending} />
-      <MovieList title = "Popular TV Shows" fetchUrl={requests.getTVShows} />
+      <MovieList title = "Trending Films" fetchUrl={requests.getTrending} />
       <MovieList title = "Now Playing" fetchUrl={requests.getNPMovies} />
-      <MovieList title = "Popular Films" fetchUrl={requests.getPopularMovies} />
+      
+      <MovieList title = "Popular Films Today" fetchUrl={requests.getPopularMovies} />
+      <MovieList title = "TV Based Films" fetchUrl={requests.getTVMovies} />
       <MovieList title = "Horror Films" fetchUrl={requests.getHorror} />
       <MovieList title = "Action Films" fetchUrl={requests.getAction} />
     </div>

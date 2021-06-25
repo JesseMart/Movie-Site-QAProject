@@ -16,6 +16,12 @@
     width: 150px;
     object-fit: contain;
 }
+.welcome{
+    position: fixed;
+    right:25px;
+    width: 80px;
+    object-fit: contain;
+}
 .dark-nav{
     background-color: #111;
 }

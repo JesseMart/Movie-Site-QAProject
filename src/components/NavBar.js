@@ -20,8 +20,11 @@ export default function NavBar() {
 
 
     return (
+        <>
         <div className={`nav ${reveal && "dark-nav"}`}>
             <img className = "navbar-logo" src={logo} alt="nav-logog" />
+            <b>Welcome to Origin Film Cinema! Enjoy your movie!</b>
         </div>
+        </>
     )
 }

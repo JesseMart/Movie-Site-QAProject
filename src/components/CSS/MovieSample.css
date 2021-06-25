@@ -16,7 +16,7 @@
     max-width: 360px;
     height: 80px;
 }
-.header_fadeBottom {
+.header--fadeBottom {
     height: 7.4rem;
-    background-image: linear-gradient(180deg, transparent, rgba(37,37,37, 0.65, #111));
+    background-image: linear-gradient(180deg, transparent, rgba(37,37,37, 0.60), #111);
 }

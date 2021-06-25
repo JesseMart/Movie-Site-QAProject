@@ -28,13 +28,13 @@ const [movie, setMovie] = useState()
             <div className = "header-contents">
                 <h1 className="movie-title">
                    
-                   {movie.title}
+                   {movie?.title || movie?.name || movie?.original_name }
                 </h1>
                 <h1 className="movie-desc">
-                    {movie.overview}
+                    {movie?.overview}
                 </h1>
             </div>
-            <div className="header_fadeBottom" />
+            <div className="header--fadeBottom" />
         </header>
     )
 }
